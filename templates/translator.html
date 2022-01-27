@@ -4,8 +4,9 @@
     <form action="{% url 'translator_view' %}" method="post">
         {% csrf_token %}
         <div class="row">
+            <p>Enter text in English to translate to German:</p>
             <div class="col-sm-6 mt-3 left">
-                <textarea class="form-control" rows="3" name="my_textarea">{{original_text}}</textarea>
+                <textarea class="form-control" rows="3" name="my_textarea" placeholder="English">{{original_text}}</textarea>
             </div>
             <div class="col-sm-6 mt-3 left">
                 <textarea class="form-control" rows="3">{{output_text}}</textarea>
