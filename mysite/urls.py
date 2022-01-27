@@ -20,5 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #telling mysite urls.py's urlpatterns about app's pattern
     #emp string denotes home dir, blog.urls=url.py of blog app
-    path ('', include('blog.urls'))
+    path ('', include('blog.urls')),
+    #telling about template urlpattern
+    path ('translator/', include('translator.urls'))
 ]
